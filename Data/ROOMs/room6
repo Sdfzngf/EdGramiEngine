@@ -1,0 +1,18 @@
+SetCG 1
+Character.say 鼻屎艾滋booger·aids我讨厌SDL 测试测试测试测试测试测试测试测试english[space]fucking测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试SDL自带的这B换行真狗屎
+SetCG 3
+Character.say 电棍 你看见[space][space][space][space]了吗
+SetCG 4
+Character.say 电棍 在哪里?
+SetCG 5
+Character.say 作者 支付5个韭菜盒子继续看
+Character.say 程序 再点就要报错了
+HideTextBox
+Delay 1
+Character.say 程序 我的BUG好了
+HideTextBox
+Delay 1
+Character.say 程序 个屁
+HideTextBox
+Button 3 主菜单 1 想啊很像啊 4 嗯嘛啊 5
+END

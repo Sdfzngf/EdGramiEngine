@@ -1,0 +1,27 @@
+LoadFont ./Data/Fonts/SourceHanSansCN-Regular.ttf 18
+LoadFont ./Data/Fonts/SourceHanSansCN-Bold.ttf 38
+LoadFont ./Data/Fonts/SourceHanSansCN-ExtraLight.ttf 28
+LoadFont ./Data/Fonts/SourceHanSansCN-Light.ttf 28
+LoadFont ./Data/Fonts/SourceHanSansCN-Normal.ttf 17
+LoadImg ./Data/mainmenu.png Index:0
+LoadRoomScpt ./Data/ROOMs/room3 3
+LoadRoomScpt ./Data/ROOMs/room4 3
+LoadRoomScpt ./Data/ROOMs/room5 5
+LoadRoomScpt ./Data/ROOMs/room6 6
+LoadRoomScpt ./Data/ROOMs/setbgm/room7_setbgm_2 7
+LoadRoomScpt ./Data/ROOMs/setbgm/room8_setbgm_1 8
+LoadRoomScpt ./Data/ROOMs/setbgm/room9_setbgm_0 9
+LoadRoomScpt ./Data/ROOMs/setbgm/room10_setbgm 10
+LoadImg ./Data/CG/room3/myhome.png 1
+LoadImg ./Data/textbox.png 2
+LoadImg ./Data/CG/room3/myhome2.png 3
+LoadImg ./Data/CG/room3/myhome3.png 4
+LoadImg ./Data/CG/room3/4.png 5
+LoadImg ./Data/button.png 6
+LoadImg ./Data/button_c.png 7
+SetWavPath Data/BGM/
+LoadWav Data/BGM/menubgm.wav 0
+LoadWav Data/BGM/2b.wav 1
+LoadWav Data/BGM/th17_11.wav 2
+LoadCfg ./Data/config.cfg
+ChangeRoomTo1

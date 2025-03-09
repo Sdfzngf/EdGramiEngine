@@ -1,0 +1,3 @@
+SetCG 0
+Character.say 程序 将BGM改为...?
+Button 3 0 9 1 8 ビーストメトロポリス 7
