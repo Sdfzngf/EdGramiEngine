@@ -1,3 +1,4 @@
 SetCG 0
 Character.say 程序 你想要干什么?
+HideTextBox
 Button 2 进行功能测试 6 更改BGM 10

@@ -95,7 +95,12 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 		SDL_Log("Couldn't create window/renderer: %s", SDL_GetError());
 		return SDL_APP_FAILURE;
 	}
-
+	SDL_Surface* icon = IMG_Load("./Data/icon.png");
+	if (!icon) {
+		SDL_Log("%s", SDL_GetError());
+		return SDL_APP_FAILURE;
+	}
+	SDL_SetWindowIcon(window, icon);
 	if (!TTF_Init())
 	{
 		std::cout << "SDL_ttf could not initialize! SDL_ttf Error " << std::endl;

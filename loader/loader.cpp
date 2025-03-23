@@ -22,6 +22,7 @@ extern int ROOM;
 extern std::vector<Sounds>wavfiles;
 extern SDL_AudioStream* stream;
 extern std::vector<std::vector<std::string>> roomscripts;
+extern SDL_Window* window;
 SDL_AudioSpec spec;
 int LoadGame(void* data) {
 	SDL_Log("\033[36mE'd Grami Engine Powered by LibSDL\33[0m");
@@ -39,8 +40,8 @@ int LoadGame(void* data) {
 		boost::split(vstr, Task, boost::is_any_of(" "), boost::token_compress_on);
 		SDL_Log(Tasks[i].c_str());
 		if (vstr[0] == "LoadFont") {
-			Fonts.push_back(TTF_OpenFont(vstr[1].c_str(), atoi(vstr[2].c_str())));
-			if (!Fonts[i])
+			TTF_Font* font = TTF_OpenFont(vstr[1].c_str(), atoi(vstr[2].c_str()));
+			if (!font)
 			{
 				std::string errm(SDL_GetError());
 				Task = "Error!" + errm;
@@ -49,6 +50,7 @@ int LoadGame(void* data) {
 				errtyp = 1;
 				return 1;
 			}
+			Fonts.push_back(font);
 		}
 		else if (vstr[0] == "LoadImg") {
 			SDL_Surface* temp = IMG_Load(vstr[1].c_str());
